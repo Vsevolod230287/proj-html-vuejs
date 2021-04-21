@@ -15,14 +15,27 @@
 <body>
   <div id="root">
     <header>
+
       <div class="container">
         <div class="logo">
           <img src="./dist/business/images/dark-logo.png" alt="">
         </div>
-        <ul>
-          <li v-for="link in headerLinks"><a href="#">{{link}}</a></li>
-        </ul>
-
+        <div class="navbar-center">
+          <ul>
+            <li v-for="link in headerLinks"><a href="#">{{link}}<i class="fas fa-chevron-down"></i></a></li>
+          </ul>
+        </div>
+        <div class="navbar-right">
+          <img src="https://www.unknown.nu/flags/images/en-100" alt="">
+          <select class="" name="Langueges">
+            <option value="en" selected>ENGLISH</option>
+          </select>
+          <i class="far fa-user-circle"></i>
+        </div>
+      </div>
+      <div class="search-right">
+        <input type="text" name="" value="" placeholder="Search">
+        <i class="fas fa-search"></i>
       </div>
     </header>
     <main>

@@ -6,19 +6,12 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   background-color: red;
-}
-
-.container {
-  margin: 0 auto;
-  width: 80%;
-  display: flex;
-  align-items: center;
 }
 
 header {
@@ -27,6 +20,72 @@ header {
   height: 60px;
   background-color: white;
 }
-header .logo img {
+header .container {
+  margin: 0 auto;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container .logo img {
   height: 30px;
+}
+header .container .navbar-center {
+  width: 50%;
+}
+header .container .navbar-center ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+header .container .navbar-center ul li a {
+  color: #88859F;
+  text-decoration: none;
+}
+header .container .navbar-center ul li a i {
+  margin-left: 2px;
+  font-size: 13px;
+}
+header .container .navbar-right {
+  display: flex;
+  justify-content: space-evenly;
+  width: 15%;
+}
+header .container .navbar-right img {
+  border: 1px solid #88859f57;
+  width: 26px;
+}
+header .container .navbar-right select {
+  color: #88859F;
+}
+header .search-right {
+  width: 155px;
+  position: absolute;
+  border-left: 1px solid lightgray;
+  align-items: center;
+  display: flex;
+  height: 60px;
+  top: 0;
+  right: 0;
+}
+header .search-right input {
+  margin-left: 15px;
+  width: 80%;
+}
+header .search-right ::-moz-placeholder {
+  color: #C7C7C7;
+}
+header .search-right :-ms-input-placeholder {
+  color: #C7C7C7;
+}
+header .search-right ::placeholder {
+  color: #C7C7C7;
+}
+header .search-right i {
+  color: #41525F;
+  position: absolute;
+  top: 24px;
+  right: 25px;
 }
