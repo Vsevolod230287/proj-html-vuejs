@@ -11,7 +11,7 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: red;
+  background-color: #EFF2F6;
 }
 
 header {
@@ -20,50 +20,54 @@ header {
   height: 60px;
   background-color: white;
 }
-header .container {
+header .header-container {
   margin: 0 auto;
   width: 75%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-header .container .logo img {
+header .header-container .logo img {
   height: 30px;
 }
-header .container .navbar-center {
+header .header-container .navbar-center {
   width: 50%;
 }
-header .container .navbar-center ul {
+header .header-container .navbar-center ul {
   width: 100%;
   list-style: none;
   display: flex;
   justify-content: space-between;
   font-size: 14px;
 }
-header .container .navbar-center ul li a {
+header .header-container .navbar-center ul li a {
   color: #88859F;
   text-decoration: none;
 }
-header .container .navbar-center ul li a i {
+header .header-container .navbar-center ul li a i {
   margin-left: 2px;
   font-size: 13px;
 }
-header .container .navbar-right {
+header .header-container .navbar-right {
   display: flex;
   justify-content: space-evenly;
   width: 15%;
 }
-header .container .navbar-right img {
+header .header-container .navbar-right img {
   border: 1px solid #88859f57;
   width: 26px;
 }
-header .container .navbar-right select {
+header .header-container .navbar-right select {
+  font-size: 13px;
   color: #88859F;
+}
+header .header-container .navbar-right i {
+  color: #6E6E6E;
 }
 header .search-right {
   width: 155px;
   position: absolute;
-  border-left: 1px solid lightgray;
+  border-left: 1px solid rgba(211, 211, 211, 0.7);
   align-items: center;
   display: flex;
   height: 60px;
@@ -75,17 +79,39 @@ header .search-right input {
   width: 80%;
 }
 header .search-right ::-moz-placeholder {
+  font-weight: 500;
   color: #C7C7C7;
 }
 header .search-right :-ms-input-placeholder {
+  font-weight: 500;
   color: #C7C7C7;
 }
 header .search-right ::placeholder {
+  font-weight: 500;
   color: #C7C7C7;
 }
 header .search-right i {
-  color: #41525F;
+  color: #687680;
   position: absolute;
   top: 24px;
   right: 25px;
+}
+
+main .jumbo {
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 80% 50%;
+}
+main .jumbo .container {
+  width: 60%;
+}
+main .jumbo .container img.hero-globe {
+  transform: rotate(270deg);
+}
+main .jumbo .container img {
+  width: 400px;
+  position: absolute;
+  top: 100px;
+  right: 250px;
 }

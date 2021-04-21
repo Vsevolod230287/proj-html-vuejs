@@ -16,7 +16,7 @@
   <div id="root">
     <header>
 
-      <div class="container">
+      <div class="header-container">
         <div class="logo">
           <img src="./dist/business/images/dark-logo.png" alt="">
         </div>
@@ -26,22 +26,27 @@
           </ul>
         </div>
         <div class="navbar-right">
-          <img src="https://www.unknown.nu/flags/images/en-100" alt="">
+          <img src="./dist/business/images/en.png" alt="">
           <select class="" name="Langueges">
-            <option value="en" selected>ENGLISH</option>
+            <option v-for="(languege, i) in langueges"  value="{{languege}}">{{English}}</option>
           </select>
           <i class="far fa-user-circle"></i>
         </div>
       </div>
       <div class="search-right">
-        <input type="text" name="" value="" placeholder="Search">
+        <input type="text" name="" value="" placeholder="Search...">
         <i class="fas fa-search"></i>
       </div>
     </header>
     <main>
-      <jumbo>
+      <div class="jumbo">
+          <div class="container">
 
-      </jumbo>
+            <img class="hero-globe" src="./dist/business/images/home-business-hero-global-image.png" alt="">
+
+             <img src="./dist/business/images/close.svg" alt="">
+          </div>
+      </div>
       <section>
 
       </section>
