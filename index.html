@@ -22,13 +22,20 @@
         </div>
         <div class="navbar-center">
           <ul>
-            <li v-for="link in headerLinks"><a href="#">{{link}}<i class="fas fa-chevron-down"></i></a></li>
+            <li v-for="link in headerLinks">
+              <a href="link.url">
+                {{ link.name }}
+                <i class="fas fa-chevron-down"></i>
+              </a>
+            </li>
           </ul>
         </div>
+
         <div class="navbar-right">
-          <img src="./dist/business/images/en.png" alt="">
-          <select class="" name="Langueges">
-            <option v-for="(languege, i) in langueges"  value="{{languege}}">{{English}}</option>
+          <img src="./dist/business/images/en.png">
+          <select v-model="selected">
+            <option value="" selected hidden>English</option>
+            <option v-for="(languege, i) in langueges" >{{languege.fullLang}}</option>
           </select>
           <i class="far fa-user-circle"></i>
         </div>
@@ -40,14 +47,14 @@
     </header>
     <main>
       <div class="jumbo">
-          <div class="container">
+        <div class="container">
 
-            <img class="hero-globe" src="./dist/business/images/home-business-hero-global-image.png" alt="">
+          <img class="hero-globe" src="./dist/business/images/home-business-hero-global-image.png" alt="">
 
-             <img src="./dist/business/images/close.svg" alt="">
-          </div>
+          <img class="avatar" src="./dist/business/images/home-business-hero-avatar.png" alt="">
+        </div>
       </div>
-      <section>
+      <section class="x">
 
       </section>
       <section>

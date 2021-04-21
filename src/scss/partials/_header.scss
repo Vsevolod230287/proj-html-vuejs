@@ -1,4 +1,7 @@
 header {
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
   display: flex;
   align-items: center;
   height: 60px;
@@ -45,7 +48,6 @@ header {
       width: 15%;
 
       img {
-        border: 1px solid #88859f57;
         width: 26px;
       }
 

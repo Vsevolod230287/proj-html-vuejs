@@ -1,22 +1,31 @@
 main {
   .jumbo {
-    height: 500px;
+    height: 600px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 80% 50%;
 
     .container {
       img.hero-globe {
-        transform: rotate(270deg);
+        width: 540px;
+        transform: rotate(281deg);
+        position: absolute;
+        top: 50px;
+        right: 130px;
       }
 
-      img {
+      img.avatar {
         width: 400px;
         position: absolute;
         top: 100px;
-        right: 250px;
+        right: 228px;
       }
       width: 60%;
     }
+  }
+
+  section.x {
+    height: 500px;
+    background-color: red;
   }
 }
