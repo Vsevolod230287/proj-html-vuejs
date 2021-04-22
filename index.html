@@ -30,15 +30,18 @@
           </ul>
         </div>
 
+
         <div class="navbar-right">
-          <img src="./dist/business/images/en.png">
+          <img :src="selected">
           <select v-model="selected">
             <option value="" selected hidden>English</option>
-            <option v-for="(languege, i) in langueges">{{languege.fullLang}}</option>
+            <option v-for="(languege, i) in langueges" :value="languege.langPath">{{languege.fullLang}}</option>
           </select>
           <i class="far fa-user-circle"></i>
         </div>
       </div>
+
+
       <div class="search-right">
         <input type="text" name="" value="" placeholder="Search...">
         <i class="fas fa-search"></i>
@@ -136,28 +139,24 @@
           </div>
           <div class="carousel">
             <div class="slider-container">
-                  <div class="slider">
-                    <div class="arrow-prev">
-                      <i class="fas fa-chevron-left" @click="prev"></i>
-                    </div>
-                    <div class="slider-img">
-                      <img width="500" :src="arrayImg[index]" alt="">
-                    </div>
-                    <div class="arrow-next">
-                      <i class="fas fa-chevron-right" @click="next"></i>
-                    </div>
-                  </div>
-                  <div class="dots-slider">
-                    <i v-for="key in arrayImg.length"
-                    class="fas fa-circle"
-                    :class="(key-1 == index) ? 'active' : '' "
-                    @click="dotClick(key-1)"></i>
-                  </div>
-                  <div class="btn">
-                    <button type="button" name="button" @click="autoplay">Autoplay/Stop autoplay</button>
-
+              <div class="slider">
+                <div class="slider-img" v-for="(path, i) in arrayImg">
+                  <img width="300" :src="path" alt="">
+                  <h2>{{ carouselCards[i].h2 }}</h2>
+                  <p>{{ carouselCards[i].p }}</p>
+                  <div class="discover-now">
+                    <span>Discover now <i class="fas fa-long-arrow-alt-right"></i></span>
                   </div>
                 </div>
+              </div>
+              <div class="dots-slider">
+                <i v-for="key in arrayImg.length" class="fas fa-circle" :class="(key-1 == index) ? 'active' : '' " @click="dotClick(key-1)"></i>
+              </div>
+              <div class="btn">
+                <button type="button" name="button" @click="autoplay">Autoplay/Stop autoplay</button>
+
+              </div>
+            </div>
           </div>
         </div>
 
@@ -168,8 +167,7 @@
     </footer>
 
   </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
   <script src="./dist/js/main.js" charset="utf-8"></script>
 </body>
 

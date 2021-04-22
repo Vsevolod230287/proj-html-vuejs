@@ -136,5 +136,9 @@ main {
   section.three-dots-carousel {
     height: 500px;
     background-color: #F8F8F8;
+    .slider {
+      display: flex;
+      
+    }
   }
 }

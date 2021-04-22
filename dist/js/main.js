@@ -1,16 +1,28 @@
 var app = new Vue({
   el: '#root',
   data: {
+    carouselCards: [{
+        h2: 'Consultative Training',
+        p: 'With a coach addressing multiple issues that are off balance, affecting your business in various unconsidered ways.',
+      },
+      {
+        h2: 'Real Deal Coaching',
+        p: 'Brings an exceptionally powerful opportunity. Being able to accept, to work with that opportunity.',
+      },
+      {
+        h2: 'Advisor Training Program',
+        p: 'Getting high quality, entrepreneur mindset driven online business coaching, is what is needed.',
+      }
+    ],
     arrayImg: [
       './dist/business/images/home-business-service-slide-01-480x298.jpg',
       './dist/business/images/home-business-service-slide-02-480x298.jpg',
       './dist/business/images/home-business-service-slide-03-480x298.jpg',
-
-
     ],
     id: '',
-    selected: '',
+    selected: './dist/business/images/en.png',
     index: 0,
+
     langueges: [{
         shortLang: 'en',
         fullLang: 'English',
@@ -29,6 +41,7 @@ var app = new Vue({
 
       }
     ],
+
     headerLinks: [{
         name: 'Home',
         url: '#',
