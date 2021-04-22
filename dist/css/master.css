@@ -188,6 +188,7 @@ main section.dream-together .container .cards {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -15px;
+  justify-content: center;
 }
 main section.dream-together .container .cards .card {
   width: calc(100%/3);
@@ -220,9 +221,52 @@ main section.dream-together .container button.get-starded {
   margin: 20px;
 }
 main section.three-dots-carousel {
+  display: flex;
+  justify-content: center;
   height: 500px;
   background-color: #F8F8F8;
 }
-main section.three-dots-carousel .slider {
+main section.three-dots-carousel .container {
+  width: 75%;
+  margin: 0 -15px;
+}
+main section.three-dots-carousel .container .carousel-header {
+  text-align: center;
+}
+main section.three-dots-carousel .container .carousel {
+  width: 100%;
+}
+main section.three-dots-carousel .container .slider {
   display: flex;
+  margin: 0 -15px;
+}
+main section.three-dots-carousel .container .slider .slider-img {
+  width: calc(100%/3);
+  padding: 0 15px;
+}
+main section.three-dots-carousel .container .slider .slider-img .slider-card {
+  border-radius: 5px;
+  background-color: white;
+}
+main section.three-dots-carousel .container .slider .slider-img .slider-card img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+}
+main section.three-dots-carousel .container .slider .slider-img .slider-card .slide-info {
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main section.three-dots-carousel .container .dots-slider {
+  text-align: center;
+}
+main section.three-dots-carousel .container .dots-slider .fa-circle {
+  font-size: 10px;
+  padding: 20px 10px;
+  color: #DADADA;
+}
+main section.three-dots-carousel .container .dots-slider .fa-circle.active {
+  color: black;
 }

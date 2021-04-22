@@ -94,6 +94,7 @@ main {
         display: flex;
         flex-wrap: wrap;
         margin: 0 -15px;
+        justify-content: center;
 
         .card {
           width: calc(100%/3);
@@ -134,11 +135,63 @@ main {
   }
 
   section.three-dots-carousel {
+    display: flex;
+    justify-content: center;
     height: 500px;
     background-color: #F8F8F8;
-    .slider {
-      display: flex;
-      
+
+    .container {
+      width: 75%;
+      margin: 0 -15px;
+
+      .carousel-header {
+        text-align: center;
+      }
+
+      .carousel {
+        width: 100%;
+      }
+
+      .slider {
+        display: flex;
+        margin: 0 -15px;
+
+        .slider-img {
+          width: calc(100%/3);
+          padding: 0 15px;
+
+          .slider-card {
+            border-radius: 5px;
+            background-color: white;
+
+            img {
+              border-top-left-radius: 5px;
+              border-top-right-radius: 5px;
+              width: 100%;
+            }
+
+            .slide-info {
+              padding: 30px;
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+            }
+          }
+        }
+      }
+
+      .dots-slider {
+        text-align: center;
+
+        .fa-circle {
+          font-size: 10px;
+          padding: 20px 10px;
+          color: #DADADA;
+        }
+        .fa-circle.active {
+          color: black;
+        }
+      }
     }
   }
 }

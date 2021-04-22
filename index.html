@@ -137,25 +137,32 @@
             <h2>Let's Dream Big Together</h2>
             <p>Explore How can I help You</p>
           </div>
+
           <div class="carousel">
             <div class="slider-container">
               <div class="slider">
                 <div class="slider-img" v-for="(path, i) in arrayImg">
-                  <img width="300" :src="path" alt="">
-                  <h2>{{ carouselCards[i].h2 }}</h2>
-                  <p>{{ carouselCards[i].p }}</p>
-                  <div class="discover-now">
-                    <span>Discover now <i class="fas fa-long-arrow-alt-right"></i></span>
+                  <div class="slider-card">
+
+                    <div class="img">
+                      <img :src="path" alt="">
+                    </div>
+                    <div class="slide-info">
+                      <h2>{{ carouselCards[i].h2 }}</h2>
+                      <p>{{ carouselCards[i].p }}</p>
+                      <div class="discover-now">
+                        <span>Discover now <i class="fas fa-long-arrow-alt-right"></i></span>
+                      </div>
+
+                    </div>
                   </div>
+
                 </div>
               </div>
               <div class="dots-slider">
                 <i v-for="key in arrayImg.length" class="fas fa-circle" :class="(key-1 == index) ? 'active' : '' " @click="dotClick(key-1)"></i>
               </div>
-              <div class="btn">
-                <button type="button" name="button" @click="autoplay">Autoplay/Stop autoplay</button>
-
-              </div>
+            
             </div>
           </div>
         </div>
