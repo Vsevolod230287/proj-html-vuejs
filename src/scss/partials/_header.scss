@@ -7,6 +7,15 @@ header {
   height: 60px;
   background-color: white;
 
+  .logo {
+    position: absolute;
+    left: 50px;
+
+    img {
+      height: 30px;
+    }
+  }
+
   .header-container {
     margin: 0 auto;
     width: 75%;
@@ -14,29 +23,27 @@ header {
     align-items: center;
     justify-content: space-between;
 
-    .logo {
-      img {
-        height: 30px;
-      }
-    }
-
     .navbar-center {
-      width: 50%;
+      width: 85%;
 
       ul {
         width: 100%;
         list-style: none;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         font-size: 14px;
 
-        li a {
-          color: #88859F;
-          text-decoration: none;
+        li {
+          padding-left: 50px;
 
-          i {
-            margin-left: 2px;
-            font-size: 13px;
+          a {
+            color: #88859F;
+            text-decoration: none;
+
+            i {
+              margin-left: 2px;
+              font-size: 13px;
+            }
           }
         }
       }
@@ -65,7 +72,7 @@ header {
   .search-right {
     width: 155px;
     position: absolute;
-    border-left: 1px solid rgba(211,211,211, 0.7 );
+    border-left: 1px solid rgba(211,211,211, 0.7);
     align-items: center;
     display: flex;
     height: 60px;

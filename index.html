@@ -15,11 +15,10 @@
 <body>
   <div id="root">
     <header>
-
+      <div class="logo">
+        <img src="./dist/business/images/dark-logo.png" alt="">
+      </div>
       <div class="header-container">
-        <div class="logo">
-          <img src="./dist/business/images/dark-logo.png" alt="">
-        </div>
         <div class="navbar-center">
           <ul>
             <li v-for="link in headerLinks">
@@ -35,7 +34,7 @@
           <img src="./dist/business/images/en.png">
           <select v-model="selected">
             <option value="" selected hidden>English</option>
-            <option v-for="(languege, i) in langueges" >{{languege.fullLang}}</option>
+            <option v-for="(languege, i) in langueges">{{languege.fullLang}}</option>
           </select>
           <i class="far fa-user-circle"></i>
         </div>
@@ -48,16 +47,119 @@
     <main>
       <div class="jumbo">
         <div class="container">
+          <div class="jumbo-info">
+            <p class="header-p">New Challenges, New Skills</p>
+            <h1>Build your own life coaching business</h1>
+            <p class="bottom-p">Whole-Life Business Coaching for commited entrepreneurs</p>
+            <button>Get started today</button>
+          </div>
 
           <img class="hero-globe" src="./dist/business/images/home-business-hero-global-image.png" alt="">
 
           <img class="avatar" src="./dist/business/images/home-business-hero-avatar.png" alt="">
         </div>
       </div>
-      <section class="x">
 
+      <section class="dream-together">
+        <div class="container">
+          <div class="title-section">
+            <h2>Let's Dream Together</h2>
+            <p>We are pioneers of the digital approach, using leading-edge technology to simplify procedutres and apply executive coaching in the new age of digitalization.</p>
+
+          </div>
+
+          <div class="cards">
+            <div class="card">
+              <div class="img">
+                <i></i>
+              </div>
+              <div class="info-card">
+                <h2>One to One</h2>
+                <p>Getting the necessary clairity about the current state to help you improve your game.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img">
+                <i></i>
+              </div>
+              <div class="info-card">
+                <h2>Anywhere</h2>
+                <p>Access to valuable and portable program which allow you to setup and live anywhere you want.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img">
+                <i></i>
+              </div>
+              <div class="info-card">
+                <h2>On Time</h2>
+                <p>Punctuality is our top priority because it's an essential criteria to access a program quality.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img">
+                <i></i>
+              </div>
+              <div class="info-card">
+                <h2>Online Courses</h2>
+                <p>Online business coaching now offers you a very powerful way to empower your business.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img">
+                <i></i>
+              </div>
+              <div class="info-card">
+                <h2>Consulting</h2>
+                <p>You will get a clear sense of direction for your business, through assessment and faster resuts.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img">
+                <div class="info-card">
+                  <h2>Self Development</h2>
+                  <p>Business Coaching aften keep your focus and develop you both in a professional and personal way.</p>
+                </div>
+              </div>
+
+            </div>
+            <button class="learn-more" type="button" name="button">Learn more</button>
+            <button class="get-starded" type="button" name="button">Get started today</button>
+          </div>
       </section>
-      <section>
+
+      <section class="three-dots-carousel">
+        <div class="container">
+          <div class="carousel-header">
+            <h2>Let's Dream Big Together</h2>
+            <p>Explore How can I help You</p>
+          </div>
+          <div class="carousel">
+            <div class="slider-container">
+                  <div class="slider">
+                    <div class="arrow-prev">
+                      <i class="fas fa-chevron-left" @click="prev"></i>
+                    </div>
+                    <div class="slider-img">
+                      <img width="500" :src="arrayImg[index]" alt="">
+                    </div>
+                    <div class="arrow-next">
+                      <i class="fas fa-chevron-right" @click="next"></i>
+                    </div>
+                  </div>
+                  <div class="dots-slider">
+                    <i v-for="key in arrayImg.length"
+                    class="fas fa-circle"
+                    :class="(key-1 == index) ? 'active' : '' "
+                    @click="dotClick(key-1)"></i>
+                  </div>
+                  <div class="btn">
+                    <button type="button" name="button" @click="autoplay">Autoplay/Stop autoplay</button>
+
+                  </div>
+                </div>
+          </div>
+        </div>
 
       </section>
     </main>

@@ -11,7 +11,6 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #EFF2F6;
 }
 
 header {
@@ -23,6 +22,13 @@ header {
   height: 60px;
   background-color: white;
 }
+header .logo {
+  position: absolute;
+  left: 50px;
+}
+header .logo img {
+  height: 30px;
+}
 header .header-container {
   margin: 0 auto;
   width: 75%;
@@ -30,18 +36,18 @@ header .header-container {
   align-items: center;
   justify-content: space-between;
 }
-header .header-container .logo img {
-  height: 30px;
-}
 header .header-container .navbar-center {
-  width: 50%;
+  width: 85%;
 }
 header .header-container .navbar-center ul {
   width: 100%;
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   font-size: 14px;
+}
+header .header-container .navbar-center ul li {
+  padding-left: 50px;
 }
 header .header-container .navbar-center ul li a {
   color: #88859F;
@@ -99,29 +105,121 @@ header .search-right i {
   right: 25px;
 }
 
+main {
+  padding-top: 60px;
+}
 main .jumbo {
-  height: 600px;
+  background-color: #EFF2F6;
+  height: 540px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 80% 50%;
 }
 main .jumbo .container {
-  width: 60%;
+  width: 75%;
+  margin: 0 auto;
+}
+main .jumbo .container .jumbo-info {
+  margin-left: 64px;
+  font-weight: 600;
+  color: #31B29D;
+  padding-top: 90px;
+  width: 410px;
+}
+main .jumbo .container .jumbo-info p.header-p {
+  font-size: 22px;
+  padding-bottom: 7px;
+}
+main .jumbo .container .jumbo-info h1 {
+  font-weight: 900;
+  color: black;
+  text-transform: uppercase;
+  font-size: 50px;
+  padding-bottom: 15px;
+}
+main .jumbo .container .jumbo-info p.bottom-p {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+main .jumbo .container .jumbo-info button {
+  color: white;
+  font-weight: 600;
+  background-color: #20AD96;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 20px;
 }
 main .jumbo .container img.hero-globe {
   width: 540px;
   transform: rotate(281deg);
   position: absolute;
-  top: 50px;
-  right: 130px;
+  top: 60px;
+  right: 60px;
 }
 main .jumbo .container img.avatar {
   width: 400px;
   position: absolute;
   top: 100px;
-  right: 228px;
+  right: 152px;
 }
-main section.x {
+main section.dream-together .container {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main section.dream-together .container .title-section {
+  padding: 50px 100px;
+}
+main section.dream-together .container .title-section h2 {
+  font-size: 25px;
+  color: #51B69F;
+  padding-bottom: 20px;
+  text-align: center;
+}
+main section.dream-together .container .title-section p {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+main section.dream-together .container .cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+main section.dream-together .container .cards .card {
+  width: calc(100%/3);
+  padding: 0 15px;
+}
+main section.dream-together .container .cards .card h2 {
+  color: #4F4F4F;
+}
+main section.dream-together .container .cards .card p {
+  color: #919191;
+}
+main section.dream-together .container button.learn-more {
+  border: 1px solid #20AD96;
+  color: #35B49F;
+  font-weight: 600;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 20px;
+}
+main section.dream-together .container button.get-starded {
+  color: white;
+  font-weight: 600;
+  background-color: #20AD96;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #20AD96;
+  font-size: 16px;
+  margin: 20px;
+}
+main section.three-dots-carousel {
   height: 500px;
-  background-color: red;
+  background-color: #F8F8F8;
 }

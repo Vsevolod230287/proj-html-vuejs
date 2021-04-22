@@ -1,31 +1,140 @@
 main {
+  padding-top: 60px;
+
   .jumbo {
-    height: 600px;
+    background-color: #EFF2F6;
+    height: 540px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 80% 50%;
 
     .container {
+      width: 75%;
+      margin: 0 auto;
+
+      .jumbo-info {
+        margin-left: 64px;
+        font-weight: 600;
+        color: #31B29D;
+        padding-top: 90px;
+        width: 410px;
+
+        p.header-p {
+          font-size: 22px;
+          padding-bottom: 7px;
+        }
+
+        h1 {
+          font-weight: 900;
+          color: black;
+          text-transform: uppercase;
+          font-size: 50px;
+          padding-bottom: 15px;
+        }
+
+        p.bottom-p {
+          font-size: 18px;
+          padding-bottom: 10px;
+        }
+
+        button {
+          color: white;
+          font-weight: 600;
+          background-color: #20AD96;
+          padding: 10px 20px;
+          border-radius: 5px;
+          font-size: 16px;
+          margin-top: 20px;
+        }
+      }
+
       img.hero-globe {
         width: 540px;
         transform: rotate(281deg);
         position: absolute;
-        top: 50px;
-        right: 130px;
+        top: 60px;
+        right: 60px;
       }
 
       img.avatar {
         width: 400px;
         position: absolute;
         top: 100px;
-        right: 228px;
+        right: 152px;
       }
-      width: 60%;
     }
   }
 
-  section.x {
+  section.dream-together {
+    .container {
+      width: 75%;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .title-section {
+        padding: 50px 100px;
+
+        h2 {
+          font-size: 25px;
+          color: #51B69F;
+          padding-bottom: 20px;
+          text-align: center;
+        }
+
+        p {
+          font-size: 30px;
+          font-weight: bold;
+          text-align: center;
+        }
+      }
+
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+
+        .card {
+          width: calc(100%/3);
+          padding: 0 15px;
+
+          h2 {
+            color: #4F4F4F;
+          }
+
+          p {
+            color: #919191;
+          }
+        }
+      }
+
+      button.learn-more {
+        border: 1px solid #20AD96;
+        color: #35B49F;
+        font-weight: 600;
+        background-color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        margin: 20px;
+      }
+
+      button.get-starded {
+        color: white;
+        font-weight: 600;
+        background-color: #20AD96;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: 1px solid #20AD96;
+        font-size: 16px;
+        margin: 20px;
+      }
+    }
+  }
+
+  section.three-dots-carousel {
     height: 500px;
-    background-color: red;
+    background-color: #F8F8F8;
   }
 }
