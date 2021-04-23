@@ -22,7 +22,7 @@
         <div class="navbar-center">
           <ul>
             <li v-for="link in headerLinks">
-              <a href="link.url">
+              <a :href="link.url">
                 {{ link.name }}
                 <i class="fas fa-chevron-down"></i>
               </a>
@@ -129,6 +129,8 @@
             <button class="learn-more" type="button" name="button">Learn more</button>
             <button class="get-starded" type="button" name="button">Get started today</button>
           </div>
+        </div>
+
       </section>
 
       <section class="three-dots-carousel">
@@ -140,27 +142,30 @@
 
           <div class="carousel">
             <div class="slider-container">
-              <div class="slider">
-                <div class="slider-img" v-for="(path, i) in arrayImg">
-                  <div class="slider-card">
 
-                    <div class="img">
-                      <img :src="path" alt="">
+              <div class="slider" v-for="(slider, i) in sliders" v-if="i == index" :class="">
+
+                <div class="slider-img" v-for="(img, i) in slider.arrayImg">
+                  <div class="slider-card">
+                    <div class="img" >
+                      <img :src="img.link" alt="">
                     </div>
                     <div class="slide-info">
-                      <h2>{{ carouselCards[i].h2 }}</h2>
-                      <p>{{ carouselCards[i].p }}</p>
-                      <div class="discover-now">
-                        <span>Discover now <i class="fas fa-long-arrow-alt-right"></i></span>
-                      </div>
-
+                      <h2>{{img.h2 }}</h2>
+                      <p>{{ img.p}}</p>
+                    </div>
+                    <div class="discover-now">
+                      <span>Discover now <i class="fas fa-long-arrow-alt-right"></i></span>
                     </div>
                   </div>
-
                 </div>
               </div>
+
               <div class="dots-slider">
-                <i v-for="key in arrayImg.length" class="fas fa-circle" :class="(key-1 == index) ? 'active' : '' " @click="dotClick(key-1)"></i>
+                <i v-for="indexDot in sliders.length"
+                class="fas fa-circle"
+                :class="((indexDot - 1) == index) ? 'active' : '' "
+                @click="clickDot(indexDot-1)"></i>
               </div>
             </div>
           </div>
@@ -169,18 +174,25 @@
       </section>
 
       <section class="all-courses">
-        <div class="all-courses-header">
-          <h2>Let's Dream Big Together</h2>
-          <p>Explore How can I help You</p>
-        </div>
-        <div class="">
-          <img src="./dist\business\images\course-02-443x600.jpg" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
+        <div class="container">
+          <div class="negativ-margin">
 
+            <div class="all-courses-header">
+              <h2>Let's Dream Big Together</h2>
+              <p>Explore How can I help You</p>
+            </div>
+            <div class="imgs" v-for="courseImg in coursesImgs">
+              <img :src="courseImg" alt="">
+            </div>
+
+            <p>Take the control of their life back and start doing things to make their dream come true.
+              <span>View all courses
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </span>
+            </p>
+          </div>
         </div>
-        <p>Take the control of their life back and start doing things to make their dream come true. <span>View all courses <i class="fas fa-long-arrow-alt-right"></i></span></p>
+
 
       </section>
     </main>

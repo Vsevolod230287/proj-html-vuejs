@@ -40,7 +40,7 @@ main {
         button {
           color: white;
           font-weight: 600;
-          background-color:#0088cc;
+          background-color: #0088cc;
           padding: 10px 20px;
           border-radius: 5px;
           font-size: 16px;
@@ -124,7 +124,7 @@ main {
       button.get-starded {
         color: white;
         font-weight: 600;
-        background-color:#0088cc;
+        background-color: #0088cc;
         padding: 10px 20px;
         border-radius: 5px;
         border: 1px solid #0088cc;
@@ -163,55 +163,101 @@ main {
         width: 100%;
       }
 
-      .slider {
-        display: flex;
-        margin: 0 -15px;
+      .slider-container {
+        .slider {
+          display: flex;
+          margin: 0 -15px;
 
-        .slider-img {
-          width: calc(100%/3);
-          padding: 0 15px;
+          .slider-img {
+            width: calc(100%/3);
+            padding: 0 15px;
 
-          .slider-card {
-            border-radius: 5px;
-            background-color: white;
+            .slider-card {
+              border-radius: 5px;
+              background-color: white;
 
-            img {
-              border-top-left-radius: 5px;
-              border-top-right-radius: 5px;
-              width: 100%;
-            }
+              img {
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                width: 100%;
+              }
 
-            .slide-info {
-              padding: 30px;
-              display: flex;
-              flex-wrap: wrap;
-              justify-content: center;
+              .slide-info {
+                padding: 30px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                h2 {
+                  color: #525252;
+                  padding-bottom: 20px;
+                }
+
+                p {
+                  color: #A9A9A9;
+                  text-align: center;
+                  padding-bottom: 20px;
+                }
+              }
+
+              .discover-now {
+                color: #40B8A5;
+                font-weight: 600;
+                line-height: 60px;
+                text-align: center;
+                border-top: 1px solid rgba(169, 169, 169, 0.2);
+              }
             }
           }
         }
-      }
 
-      .dots-slider {
-        text-align: center;
-
-        .fa-circle {
+        .dots-slider {
+          padding-top: 20px;
           font-size: 10px;
-          padding: 20px 10px;
-          color: #DADADA;
-        }
+          text-align: center;
 
-        .fa-circle.active {
-          color: black;
+          .fa-circle {
+            font-size: 10px;
+            padding: 20px 10px;
+            color: #DADADA;
+          }
+
+          .fa-circle.active {
+            color: black;
+          }
         }
       }
     }
   }
 
   section.all-courses {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 0;
+    .container {
+      width: 75%;
+      margin: 0 auto;
+
+      .negativ-margin {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+
+        .all-courses-header {
+          width: 100%;
+          text-align: center;
+        }
+
+        .imgs {
+          width: calc(100%/4);
+          padding: 0 15px;
+
+          img {
+            width: 100%;
+          }
+        }
+        p {
+              padding: 0 15px;
+        }
+
+      }
+    }
   }
 }
