@@ -145,7 +145,7 @@ main .jumbo .container .jumbo-info p.bottom-p {
 main .jumbo .container .jumbo-info button {
   color: white;
   font-weight: 600;
-  background-color: #20AD96;
+  background-color: #0088cc;
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 16px;
@@ -202,7 +202,7 @@ main section.dream-together .container .cards .card p {
   color: #919191;
 }
 main section.dream-together .container button.learn-more {
-  border: 1px solid #20AD96;
+  border: 1px solid #0088cc;
   color: #35B49F;
   font-weight: 600;
   background-color: white;
@@ -214,10 +214,10 @@ main section.dream-together .container button.learn-more {
 main section.dream-together .container button.get-starded {
   color: white;
   font-weight: 600;
-  background-color: #20AD96;
+  background-color: #0088cc;
   padding: 10px 20px;
   border-radius: 5px;
-  border: 1px solid #20AD96;
+  border: 1px solid #0088cc;
   font-size: 16px;
   margin: 20px;
 }
