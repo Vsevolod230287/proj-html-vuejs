@@ -243,15 +243,14 @@ main {
 
   section.all-courses {
     .container {
-      width: 75%;
+      width: 85%;
       margin: 0 auto;
 
       .negativ-margin {
         padding: 50px 0;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        margin: 0 -15px;
+        justify-content: space-between;
 
         .all-courses-header {
           width: 100%;
@@ -271,8 +270,34 @@ main {
         }
 
         .imgs {
-          width: calc(100%/4);
-          padding: 0 15px;
+          position: relative;
+          width: calc(100%/4 - 20px);
+
+          .overlay {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: rgba(0,0,0,0.5);
+          }
+
+          .price-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin: 0 15px;
+            color: white;
+
+            h3 {
+              font-size: 20px;
+              color: #00c9a5;
+            }
+
+            p {
+              font-size: 16px;
+              padding-bottom: 10px;
+              font-weight: 600;
+            }
+          }
 
           img {
             width: 100%;
@@ -282,6 +307,7 @@ main {
         .all-corses-bottom {
           padding: 50px 0;
           width: 500px;
+          margin: 0 auto;
 
           p {
             color: #868686;

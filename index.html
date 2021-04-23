@@ -177,8 +177,13 @@
               <h2>Let's Dream Big Together</h2>
               <p>Explore How can I help You</p>
             </div>
-            <div class="imgs" v-for="courseImg in coursesImgs">
-              <img :src="courseImg" alt="">
+            <div class="imgs" v-for="course in courses">
+              <div class="overlay"></div>
+              <div class="price-info">
+                <h3>{{course.h3}}<span>{{course.span}}</span></h3>
+                <p>{{course.p}}</p>
+              </div>
+              <img :src="course.link" alt="">
             </div>
             <div class="all-corses-bottom">
               <p>Take the control of their life back and start doing things to make their dream come true.

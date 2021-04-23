@@ -3,18 +3,37 @@ var app = new Vue({
   el: '#root',
   data: {
 
-    coursesImgs: [
-      './dist/business/images/course-02-443x600.jpg',
-      './dist/business/images/stock-full-hd-03-443x600.jpg',
-      './dist/business/images/stock-full-hd-04-443x600.jpg',
-      './dist/business/images/stock-full-hd-06-443x600.jpg'
+    courses: [
+      {
+        h3: '$40.',
+        span: '00',
+        p: 'Learn to Write as a professional Author',
+        link: './dist/business/images/course-02-443x600.jpg'
+      },
+      {
+        h3: 'Free',
+        span: '',
+        p: 'Customer-centric Info-tech Strategies',
+        link: './dist/business/images/stock-full-hd-03-443x600.jpg'
+      },
+      {
+        h3: '$19.',
+        span: '00',
+        p: 'Open Programming Courses for Everyone: Python',
+        link: './dist/business/images/stock-full-hd-04-443x600.jpg'
+      },
+      {
+        h3: '$26.',
+        span: '00',
+        p: 'Academic Listening and Note_taking',
+        link: './dist/business/images/stock-full-hd-06-443x600.jpg'
+      }
     ],
     id: '',
     selected: './dist/business/images/en.png',
     index: 0,
 
-    langueges: [
-      {
+    langueges: [{
         shortLang: 'en',
         fullLang: 'English',
         langPath: './dist/business/images/en.png'
@@ -32,8 +51,7 @@ var app = new Vue({
 
       }
     ],
-    headerLinks: [
-      {
+    headerLinks: [{
         name: 'Home',
         url: '#',
       },
@@ -59,10 +77,8 @@ var app = new Vue({
       },
 
     ],
-    sliders: [
-      {
-        arrayImg: [
-          {
+    sliders: [{
+        arrayImg: [{
             link: './dist/business/images/home-business-service-slide-01-480x298.jpg',
             indice: 0,
             h2: 'Consultative Training',
@@ -85,8 +101,7 @@ var app = new Vue({
         ]
       },
       {
-        arrayImg: [
-          {
+        arrayImg: [{
             link: './dist/business/images/1.jpeg',
             indice: 0,
             h2: 'Representative efforts',
@@ -109,8 +124,7 @@ var app = new Vue({
         ]
       },
       {
-        arrayImg: [
-          {
+        arrayImg: [{
             link: './dist/business/images/4.jpg',
             indice: 0,
             h2: 'Promote yourself!',
@@ -143,5 +157,5 @@ var app = new Vue({
 
 
   },
-  
+
 })
