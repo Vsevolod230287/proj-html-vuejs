@@ -323,4 +323,64 @@ main {
       }
     }
   }
+
+  section.thrive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 500px;
+    background-color: #323043;
+
+    .thrive-left {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      .thrive-youtube {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img.youtube {
+          top: 50%;
+          position: absolute;
+          width: 50px;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        img:last-child {
+        width: 75%;
+        }
+      }
+    }
+    .thrive-right {
+      position: relative;
+      z-index: 1000;
+      .thrive-info {
+        i.fa-chevron-circle-up {
+
+        }
+      }
+    }
+
+    img.globe {
+      width: 50%;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+  }
+
+  section.events {
+    height: 500px;
+  }
+}
+
+.none {
+  display: none;
 }

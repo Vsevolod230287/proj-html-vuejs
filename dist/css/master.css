@@ -386,3 +386,50 @@ main section.all-courses .container .negativ-margin .all-corses-bottom p span {
   font-weight: 600;
   color: #626262;
 }
+main section.thrive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 500px;
+  background-color: #323043;
+}
+main section.thrive .thrive-left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+main section.thrive .thrive-left .thrive-youtube {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section.thrive .thrive-left .thrive-youtube img.youtube {
+  top: 50%;
+  position: absolute;
+  width: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main section.thrive .thrive-left .thrive-youtube img:last-child {
+  width: 75%;
+}
+main section.thrive .thrive-right {
+  position: relative;
+  z-index: 1000;
+}
+main section.thrive img.globe {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+main section.events {
+  height: 500px;
+}
+
+.none {
+  display: none;
+}

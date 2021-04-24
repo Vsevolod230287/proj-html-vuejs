@@ -2,9 +2,7 @@ var app = new Vue({
 
   el: '#root',
   data: {
-
-    courses: [
-      {
+    courses: [{
         h3: '$40.',
         span: '00',
         p: 'Learn to Write as a professional Author',
@@ -151,11 +149,25 @@ var app = new Vue({
   methods: {
     clickDot: function(indexDot) {
       this.index = indexDot;
+    },
+    showX: function(e) {
+
+      let target = $(e.target);
+      target.addClass('none');
+      target.parent().next().children().removeClass('none');
+      target.parent().siblings('p').removeClass('none');
 
     },
+    showY: function(e) {
+      let target = $(e.target);
+      target.addClass('none');
+      target.parent().prev().children().removeClass('none');
+      target.parent().siblings('p').addClass('none');
+    }
 
 
 
-  },
+
+  }
 
 })
