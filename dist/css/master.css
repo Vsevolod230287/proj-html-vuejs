@@ -418,7 +418,7 @@ main section.thrive .thrive-left .thrive-youtube img:last-child {
 }
 main section.thrive .thrive-right {
   position: relative;
-  z-index: 1000;
+  z-index: 999;
 }
 main section.thrive img.globe {
   width: 50%;

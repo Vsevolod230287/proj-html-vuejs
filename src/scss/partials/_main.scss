@@ -353,19 +353,15 @@ main {
         }
 
         img:last-child {
-        width: 75%;
+          width: 75%;
         }
       }
     }
+
     .thrive-right {
       position: relative;
-      z-index: 1000;
-      .thrive-info {
-        i.fa-chevron-circle-up {
+      z-index: 999;
 
-        }
-      }
-    }
 
     img.globe {
       width: 50%;
@@ -373,7 +369,6 @@ main {
       top: 0;
       right: 0;
     }
-
   }
 
   section.events {

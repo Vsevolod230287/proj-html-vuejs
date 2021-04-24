@@ -2,6 +2,18 @@ var app = new Vue({
 
   el: '#root',
   data: {
+    isHidden: false,
+    thriveInfo: [
+      {
+      span: 'How can we help?',
+      p: 'How many courses you have been on, using however many techniques and methods. Unless you have come to realize the value of mindset, then you have yet to understand how success comes.',
+    }, {
+      span: 'Why would I need a business COACH?',
+      p: 'How many courses you have been on, using however many techniques and methods. Unless you have come to realize the value of mindset, then you have yet to understand how success comes.',
+    }, {
+      span: 'What is one-on-one coaching?',
+      p: 'How many courses you have been on, using however many techniques and methods. Unless you have come to realize the value of mindset, then you have yet to understand how success comes.',
+    }],
     courses: [{
         h3: '$40.',
         span: '00',
@@ -27,7 +39,6 @@ var app = new Vue({
         link: './dist/business/images/stock-full-hd-06-443x600.jpg'
       }
     ],
-    id: '',
     selected: './dist/business/images/en.png',
     index: 0,
 
@@ -151,19 +162,32 @@ var app = new Vue({
       this.index = indexDot;
     },
     showX: function(e) {
+     let target = $(e.target);
+     target.addClass('none');
+     target.parent().next().children().removeClass('none');
+     target.parent().siblings('p').removeClass('none');
 
-      let target = $(e.target);
-      target.addClass('none');
-      target.parent().next().children().removeClass('none');
-      target.parent().siblings('p').removeClass('none');
-
-    },
+   },
     showY: function(e) {
       let target = $(e.target);
       target.addClass('none');
       target.parent().prev().children().removeClass('none');
       target.parent().siblings('p').addClass('none');
-    }
+    },
+    // showX: function(e) {
+    //
+    //   let target = $(e.target);
+    //   target.addClass('none');
+    //   target.parent().next().children().removeClass('none');
+    //   target.parent().siblings('p').removeClass('none');
+    //
+    // },
+    // showY: function(e) {
+    //   let target = $(e.target);
+    //   target.addClass('none');
+    //   target.parent().prev().children().removeClass('none');
+    //   target.parent().siblings('p').addClass('none');
+    // }
 
 
 
