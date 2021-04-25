@@ -2,9 +2,9 @@ var app = new Vue({
 
   el: '#root',
   data: {
+    enventsInfo: [{},{},{},{},{},{}],
     isHidden: false,
-    thriveInfo: [
-      {
+    thriveInfo: [{
       span: 'How can we help?',
       p: 'How many courses you have been on, using however many techniques and methods. Unless you have come to realize the value of mindset, then you have yet to understand how success comes.',
     }, {
@@ -56,7 +56,7 @@ var app = new Vue({
       {
         shortLang: 'de',
         fullLang: 'Deutsch',
-        langPath: './dist/business/images/fr.png'
+        langPath: './dist/business/images/de.png'
 
       }
     ],
@@ -162,14 +162,14 @@ var app = new Vue({
       this.index = indexDot;
     },
     showX: function(e) {
-     let target = $(e.target);
-     target.parent().next().children().css("color", "#239284");
-     target.parent().siblings('.second').css("color", "#239284");
-     target.hide()
-     target.parent().next().children().show();
-     target.parent().siblings('p').slideDown(200);
+      let target = $(e.target);
+      target.parent().next().children().css("color", "#239284");
+      target.parent().siblings('.second').css("color", "#239284");
+      target.hide()
+      target.parent().next().children().show();
+      target.parent().siblings('p').slideDown(200);
 
-   },
+    },
     showY: function(e) {
       let target = $(e.target);
       target.hide();
@@ -177,24 +177,6 @@ var app = new Vue({
       target.parent().prev().children().show();
       target.parent().siblings('p').slideUp(200);
     },
-    // showX: function(e) {
-    //
-    //   let target = $(e.target);
-    //   target.addClass('none');
-    //   target.parent().next().children().removeClass('none');
-    //   target.parent().siblings('p').removeClass('none');
-    //
-    // },
-    // showY: function(e) {
-    //   let target = $(e.target);
-    //   target.addClass('none');
-    //   target.parent().prev().children().removeClass('none');
-    //   target.parent().siblings('p').addClass('none');
-    // }
-
-
-
-
   }
 
 })

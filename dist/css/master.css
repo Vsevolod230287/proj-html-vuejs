@@ -395,11 +395,16 @@ main section.thrive {
   height: 800px;
   background-color: #323043;
 }
+main section.thrive img.dots-square {
+  position: absolute;
+  bottom: 65px;
+  left: 30px;
+}
 main section.thrive img.globe {
-  width: 50%;
+  width: 70%;
   position: absolute;
   top: 0;
-  right: 0;
+  right: -190px;
 }
 main section.thrive .thrive-left {
   width: 50%;
@@ -446,9 +451,53 @@ main section.thrive .thrive-right .thrive-info p {
 main section.thrive .thrive-right .thrive-info span {
   font-size: 25px;
 }
-main section.thrive section.events {
+main section.events {
   height: 500px;
 }
-main .none {
+main section.events .events-container {
+  width: 60%;
+  margin: 0 auto;
+}
+main section.events .events-container .events-header {
+  padding: 50px;
+  text-align: center;
+}
+main section.events .events-container .events-header p {
+  color: #39B6A2;
+  font-size: 25px;
+  padding-bottom: 15px;
+}
+main section.events .events-container .events-header h1 {
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+main section.events .events-container .cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+main section.events .events-container .cards .card {
+  width: calc(100%/2);
+  padding: 0 15px;
+  margin: 15px 0;
+}
+main section.events .events-container .cards .card .card-wrapper {
+  padding: 15px;
+  background-color: #F8F8F8;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+main section.events .events-container .cards .card .card-wrapper .left {
+  display: flex;
+  flex-direction: column;
+}
+main section.events .events-container .cards .card .card-wrapper .right {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.none {
   display: none;
 }
