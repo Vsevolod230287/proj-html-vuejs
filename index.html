@@ -199,7 +199,7 @@
 
       </section>
       <section class="thrive">
-
+<img class="globe" src="./dist\business\images\background-map-dots-top-right-transparent.png" alt="">
         <div class="thrive-left">
           <div class="thrive-youtube">
             <img class="youtube" src="./dist\business\images\icon-youtube-play.png" alt="">
@@ -209,7 +209,7 @@
 
         <div class="thrive-right">
 
-          <img class="globe" src="./dist\business\images\background-map-dots-top-right-transparent.png" alt="">
+
 
           <div class="">
             <h1>To Thrive In Business Today, You'll Need a Good Plan</h1>
@@ -217,8 +217,9 @@
               <div class="thrive-info" v-for="thrive in thriveInfo">
                 <span @click="showX" ><i class="fas fa-chevron-circle-down"></i></span>
                 <span @click="showY"><i class="fas fa-chevron-circle-up none"></i></span>
-                <span>{{thrive.span}}</span>
+                <span class="second">{{thrive.span}}</span>
                 <p class="none">{{thrive.p}}</p>
+
               </div>
 
             </div>

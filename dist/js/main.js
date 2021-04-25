@@ -163,16 +163,19 @@ var app = new Vue({
     },
     showX: function(e) {
      let target = $(e.target);
-     target.addClass('none');
-     target.parent().next().children().removeClass('none');
-     target.parent().siblings('p').removeClass('none');
+     target.parent().next().children().css("color", "#239284");
+     target.parent().siblings('.second').css("color", "#239284");
+     target.hide()
+     target.parent().next().children().show();
+     target.parent().siblings('p').slideDown(200);
 
    },
     showY: function(e) {
       let target = $(e.target);
-      target.addClass('none');
-      target.parent().prev().children().removeClass('none');
-      target.parent().siblings('p').addClass('none');
+      target.hide();
+      target.parent().next().css("color", "white");
+      target.parent().prev().children().show();
+      target.parent().siblings('p').slideUp(200);
     },
     // showX: function(e) {
     //

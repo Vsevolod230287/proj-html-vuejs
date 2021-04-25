@@ -387,12 +387,19 @@ main section.all-courses .container .negativ-margin .all-corses-bottom p span {
   color: #626262;
 }
 main section.thrive {
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 500px;
+  height: 800px;
   background-color: #323043;
+}
+main section.thrive img.globe {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 main section.thrive .thrive-left {
   width: 50%;
@@ -419,17 +426,29 @@ main section.thrive .thrive-left .thrive-youtube img:last-child {
 main section.thrive .thrive-right {
   position: relative;
   z-index: 999;
+  width: 40%;
 }
-main section.thrive img.globe {
-  width: 50%;
-  position: absolute;
-  top: 0;
-  right: 0;
+main section.thrive .thrive-right h1 {
+  font-size: 30px;
+  padding-bottom: 15px;
 }
-main section.events {
+main section.thrive .thrive-right .thrive-info {
+  padding: 15px 0;
+  border-bottom: 1px solid grey;
+}
+main section.thrive .thrive-right .thrive-info i {
+  padding-right: 10px;
+}
+main section.thrive .thrive-right .thrive-info p {
+  font-size: 20px;
+  padding: 15px 40px;
+}
+main section.thrive .thrive-right .thrive-info span {
+  font-size: 25px;
+}
+main section.thrive section.events {
   height: 500px;
 }
-
-.none {
+main .none {
   display: none;
 }

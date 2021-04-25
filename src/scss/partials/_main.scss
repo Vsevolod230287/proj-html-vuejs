@@ -325,12 +325,20 @@ main {
   }
 
   section.thrive {
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 500px;
+    height: 800px;
     background-color: #323043;
+
+    img.globe {
+      width: 50%;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
 
     .thrive-left {
       width: 50%;
@@ -361,21 +369,37 @@ main {
     .thrive-right {
       position: relative;
       z-index: 999;
+      width: 40%;
 
+      h1 {
+        font-size: 30px;
+        padding-bottom: 15px;
+      }
 
-    img.globe {
-      width: 50%;
-      position: absolute;
-      top: 0;
-      right: 0;
+      .thrive-info {
+        padding: 15px 0;
+        border-bottom: 1px solid grey;
+        i {
+          padding-right: 10px;
+        }
+
+        p {
+          font-size: 20px;
+          padding: 15px 40px;
+        }
+
+        span {
+          font-size: 25px;
+        }
+      }
+    }
+
+    section.events {
+      height: 500px;
     }
   }
 
-  section.events {
-    height: 500px;
+  .none {
+    display: none;
   }
-}
-
-.none {
-  display: none;
 }
