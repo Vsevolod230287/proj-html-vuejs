@@ -465,7 +465,7 @@ main section.events .events-container .events-header {
 main section.events .events-container .events-header p {
   color: #39B6A2;
   font-size: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
 }
 main section.events .events-container .events-header h1 {
   font-size: 30px;
@@ -538,9 +538,14 @@ main section.carousel-love-us .love-header {
   padding: 50px;
 }
 main section.carousel-love-us .love-header p {
+  font-size: 25px;
+  color: #3CB6A2;
   text-align: center;
+  padding-bottom: 15px;
 }
 main section.carousel-love-us .love-header h1 {
+  font-size: 40px;
+  padding-bottom: 15px;
   text-align: center;
 }
 main section.carousel-love-us .love-container {
@@ -672,4 +677,59 @@ main section.newsletters .newsletters-info h1 span {
 footer {
   background-color: #171621;
   height: 400px;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+footer .footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+}
+footer .footer-container ul {
+  padding-top: 70px;
+  padding-right: 50px;
+  list-style: none;
+}
+footer .footer-container ul li:first-child {
+  padding-bottom: 30px;
+}
+footer .footer-container ul li {
+  padding-bottom: 20px;
+}
+footer .footer-container .left {
+  width: 50%;
+}
+footer .footer-container .left li:first-child {
+  color: white;
+}
+footer .footer-container .left li {
+  color: #6B6A71;
+}
+footer .footer-container .left li a {
+  color: #6B6A71;
+  font-size: 23px;
+  padding-right: 25px;
+}
+footer .footer-container .right {
+  display: flex;
+  justify-content: flex-start;
+}
+footer .footer-container .right ul.senzaTitle li:first-child {
+  color: #171621;
+}
+footer .footer-container .right li:first-child {
+  width: 50%;
+  color: white;
+}
+footer .footer-container .right li {
+  color: #6B6A71;
+}
+footer .footer-container .right li a {
+  color: #6B6A71;
+}
+footer .rights {
+  color: #6B6A71;
 }

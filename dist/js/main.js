@@ -2,6 +2,24 @@ var app = new Vue({
 
   el: '#root',
   data: {
+    footerInfo: {
+      address: [
+        'Address',
+        '383 Ne 191st St # 87394 Miami, FL33179-3899',
+        '+1(305)547-9909 (9am - 5pm EST, MOnday - Friday)',
+        'support@maxcoach.com',
+      ],
+      social: [
+        '<i class="fab fa-facebook-square"></i>',
+        '<i class="fab fa-twitter-square"></i>',
+        '<i class="fab fa-instagram-square"></i>',
+        '<i class="fab fa-linkedin"></i>',
+
+      ],
+      explore: ['Explore','Satrt here', 'Blog', 'About us'],
+      senzaTitle: ['none', 'Success story', 'Courses', 'Contact us'],
+      information: ['Information', 'Membership', 'Purchase guide', 'Privacy plicy', 'Terms of service']
+    },
     indexLove: 0,
     loveCards: [{
         h3: 'High level of efficiency and scientific teaching methods',
