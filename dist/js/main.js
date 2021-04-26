@@ -2,7 +2,74 @@ var app = new Vue({
 
   el: '#root',
   data: {
-    enventsInfo: [{},{},{},{},{},{}],
+    indexLove: 0,
+    loveCards: [{
+        h3: 'High level of efficiency and scientific teaching methods',
+        p: 'I am free to learn at my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.',
+        img: './dist/business/images/testimonial-avata-02.jpg',
+        name: 'MINA HOLLACE',
+        profession: '/Freelancer',
+      },
+      {
+        h3: 'Professional team of specialists and passionate mentors at reach',
+        p: 'I need to get a certification for English profiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.',
+        img: './dist/business/images/testimonial-avata-04.jpg',
+        name: 'madley pondor',
+        profession: '/IT Specialist',
+      },
+      {
+        h3: 'A Versatile, analytical and hard working IT consultant.',
+        p: 'I highly recommend this aproach to anyone who aspire to become better programmers. Thank you very much Dan, sharing your passion for programming languages! ',
+        img: './dist/business/images/testimonial-avata-01.jpg',
+        name: 'John Travis',
+        profession: '/Web Programmer',
+      },
+      {
+        h3: 'It is a choice of quality for people with special needs',
+        p: 'I am very strict person so I require everything to be organized and neat. Then, I will be able to make things right and shine. MacCoach guys just got me.',
+        img: './dist/business/images/testimonial-avata-03.jpg',
+        name: 'Florence Themes',
+        profession: '/Multimedial Admin',
+      }
+    ],
+    selected: './dist/business/images/en.png',
+    index: 0,
+    enventsInfo: [{
+        city: 'Texas, US',
+        h3: 'Storytelling Workshop',
+        day: '22',
+        month: 'nov',
+      },
+      {
+        city: 'New York, US',
+        h3: 'Painting Art Contest',
+        day: '10',
+        month: 'oct',
+      },
+      {
+        city: 'Hamburg, Germany',
+        h3: 'International Art Fair 2020',
+        day: '23',
+        month: 'nov',
+      },
+      {
+        city: 'Ilinois, US',
+        h3: 'Street Performance: Call for Artist',
+        day: '15',
+        month: 'dec',
+      },
+      {
+        city: 'Illinois, US',
+        h3: 'Consumer Food Safety Education Conference',
+        day: '22',
+        month: 'jul',
+      }, {
+        city: 'Dubai',
+        h3: 'How meditation improve your mental health?',
+        day: '12',
+        month: 'aug',
+      }
+    ],
     isHidden: false,
     thriveInfo: [{
       span: 'How can we help?',
@@ -37,11 +104,8 @@ var app = new Vue({
         span: '00',
         p: 'Academic Listening and Note_taking',
         link: './dist/business/images/stock-full-hd-06-443x600.jpg'
-      }
+      },
     ],
-    selected: './dist/business/images/en.png',
-    index: 0,
-
     langueges: [{
         shortLang: 'en',
         fullLang: 'English',
@@ -177,6 +241,12 @@ var app = new Vue({
       target.parent().prev().children().show();
       target.parent().siblings('p').slideUp(200);
     },
+    hide: function(i) {
+
+    }
+
   }
+
+
 
 })

@@ -401,10 +401,10 @@ main section.thrive img.dots-square {
   left: 30px;
 }
 main section.thrive img.globe {
-  width: 70%;
+  width: 61%;
   position: absolute;
   top: 0;
-  right: -190px;
+  right: 0;
 }
 main section.thrive .thrive-left {
   width: 50%;
@@ -452,7 +452,7 @@ main section.thrive .thrive-right .thrive-info span {
   font-size: 25px;
 }
 main section.events {
-  height: 500px;
+  padding: 50px 0;
 }
 main section.events .events-container {
   width: 60%;
@@ -465,7 +465,7 @@ main section.events .events-container .events-header {
 main section.events .events-container .events-header p {
   color: #39B6A2;
   font-size: 25px;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
 }
 main section.events .events-container .events-header h1 {
   font-size: 30px;
@@ -487,17 +487,189 @@ main section.events .events-container .cards .card .card-wrapper {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  align-items: center;
 }
 main section.events .events-container .cards .card .card-wrapper .left {
   display: flex;
   flex-direction: column;
 }
+main section.events .events-container .cards .card .card-wrapper .left span {
+  padding-bottom: 5px;
+  color: #989898;
+}
 main section.events .events-container .cards .card .card-wrapper .right {
+  width: 31%;
+  padding-left: 10px;
   align-items: center;
   display: flex;
   flex-direction: column;
 }
+main section.events .events-container .cards .card .card-wrapper .right span.num {
+  font-size: 25px;
+  color: #33B39E;
+  padding-bottom: 5px;
+}
+main section.events .events-container .cards .card .card-wrapper .right span.month {
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+main section.events .events-container .cards .card .card-wrapper .right button {
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: #20AD96;
+}
+main section.events .events-container .events-view-all p {
+  font-weight: 600;
+  padding: 30px 0;
+  color: #757575;
+  text-align: center;
+}
+main section.events .events-container .events-view-all p span {
+  color: #4E4E4E;
+  font-weight: 900;
+}
+main section.carousel-love-us {
+  background-color: #F8F8F8;
+}
+main section.carousel-love-us .love-header {
+  padding: 50px;
+}
+main section.carousel-love-us .love-header p {
+  text-align: center;
+}
+main section.carousel-love-us .love-header h1 {
+  text-align: center;
+}
+main section.carousel-love-us .love-container {
+  width: 90%;
+  margin: 0 auto;
+}
+main section.carousel-love-us .love-container .love-carousel {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+main section.carousel-love-us .love-container .love-carousel .card {
+  width: calc(100%/3);
+  padding: 15px;
+}
+main section.carousel-love-us .love-container .love-carousel .card .love-card-info {
+  padding: 15px;
+  background-color: white;
+  border-radius: 7px;
+}
+main section.carousel-love-us .love-container .love-carousel .card .love-card-info h3 {
+  color: #585378;
+  padding: 15px 0;
+}
+main section.carousel-love-us .love-container .love-carousel .card .love-card-info p {
+  padding-bottom: 20px;
+  color: #868686;
+}
+main section.carousel-love-us .love-container .love-carousel .card .love-card-info .profile {
+  display: flex;
+  justify-content: flex-start;
+}
+main section.carousel-love-us .love-container .love-carousel .card .love-card-info .profile .profile-span {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+main section.carousel-love-us .love-container .love-carousel .card .love-card-info .profile .profile-span span.name {
+  font-weight: 900;
+  color: #676484;
+}
+main section.carousel-love-us .love-container .love-carousel .card .love-card-info .profile .profile-span span.profession {
+  color: #ABABAB;
+  font-weight: 600;
+}
+main section.carousel-love-us .love-container .love-carousel .card img {
+  width: 50px;
+  border-radius: 50%;
+}
+main section.carousel-love-us .love-container .love-carousel .love-nav-dots {
+  padding: 60px;
+}
+main section.carousel-love-us .love-container .love-carousel .love-nav-dots i.active {
+  font-size: 18px;
+  color: #3F3A64;
+}
+main section.carousel-love-us .love-container .love-carousel .love-nav-dots i {
+  color: #B7B5C4;
+  padding: 10px;
+}
+main section.newsletters {
+  height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+main section.newsletters .dots-square {
+  width: 175px;
+  position: absolute;
+  top: 41%;
+  right: 200px;
+  transform: translateY(-50%);
+}
+main section.newsletters i {
+  color: #8FD6CA;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 200px;
+}
+main section.newsletters .half-two-circles {
+  position: absolute;
+  top: 50%;
+  right: 200px;
+  transform: translateY(-50%);
+}
+main section.newsletters .newsletters-info {
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+}
+main section.newsletters .newsletters-info .email-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section.newsletters .newsletters-info .email-button input {
+  background-color: #F5F5F5;
+  padding-left: 10px;
+  height: 33px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+main section.newsletters .newsletters-info .email-button button {
+  background-color: #20AD96;
+  border-radius: 5px;
+  padding: 9px;
+  color: white;
+}
+main section.newsletters .newsletters-info p {
+  padding: 20px 0;
+  font-size: 17px;
+  color: #888888;
+}
+main section.newsletters .newsletters-info h1 {
+  font-size: 35px;
+}
+main section.newsletters .newsletters-info h1 span {
+  color: #27AF99;
+}
 
 .none {
   display: none;
+}
+
+footer {
+  background-color: #171621;
+  height: 400px;
 }
