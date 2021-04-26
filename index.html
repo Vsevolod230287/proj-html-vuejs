@@ -181,11 +181,20 @@
               <h2>Let's Dream Big Together</h2>
               <p>Explore How can I help You</p>
             </div>
-            <div class="imgs" v-for="course in courses">
-              <div class="overlay"></div>
-              <div class="price-info">
+            <div class="imgs" v-for="(course,i) in courses" @mouseover="show" @mouseleave="hide">
+              <div class="overlay">  </div>
+
+              <div class="price-info" >
                 <h3>{{course.h3}}<span>{{course.span}}</span></h3>
                 <p>{{course.p}}</p>
+
+                <div class="hide-info none">
+                  <p>
+                    <span><i class="fas fa-clipboard-list"></i>20 Lessons</span>
+                    <span><i class="fas fa-user-alt"></i>50 Students</span>
+                  </p>
+                  <p>The purpose of this course is to provide the advanced writing techniques commonly used for inspiring readers and...</p>
+                </div>
               </div>
               <img :src="course.link" alt="">
             </div>
@@ -247,7 +256,8 @@
                 <div class="right">
                   <span class="num">{{event.day}}</span>
                   <span class="month">{{event.month}}</span>
-                  <button type="button" name="button">Get ticket</button>
+                  <button type="button" name="button">
+                  Get ticket</button>
                 </div>
               </div>
             </div>

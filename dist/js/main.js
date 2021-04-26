@@ -2,6 +2,8 @@ var app = new Vue({
 
   el: '#root',
   data: {
+    indexHover: 0,
+    hover: false,
     footerInfo: {
       address: [
         'Address',
@@ -16,7 +18,7 @@ var app = new Vue({
         '<i class="fab fa-linkedin"></i>',
 
       ],
-      explore: ['Explore','Satrt here', 'Blog', 'About us'],
+      explore: ['Explore', 'Satrt here', 'Blog', 'About us'],
       senzaTitle: ['none', 'Success story', 'Courses', 'Contact us'],
       information: ['Information', 'Membership', 'Purchase guide', 'Privacy plicy', 'Terms of service']
     },
@@ -259,8 +261,13 @@ var app = new Vue({
       target.parent().prev().children().show();
       target.parent().siblings('p').slideUp(200);
     },
-    hide: function(i) {
+    show: function(e) {
+      let target = $(e.target);
+      console.log(target.children('div.price-info'))
+    },
 
+    hide: function(i) {
+      this.courses[i]
     }
 
   }

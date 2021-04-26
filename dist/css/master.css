@@ -163,6 +163,9 @@ main .jumbo .container .jumbo-info button {
   font-size: 16px;
   margin-top: 20px;
 }
+main .jumbo .container .jumbo-info button:hover {
+  background-color: #3F3A64;
+}
 main .jumbo .container img.hero-globe {
   width: 540px;
   transform: rotate(281deg);
@@ -232,6 +235,10 @@ main section.dream-together .container .cards .buttons button.learn-more {
   font-size: 16px;
   margin: 20px;
 }
+main section.dream-together .container .cards .buttons button.learn-more:hover {
+  background-color: #3F3A64;
+  color: white;
+}
 main section.dream-together .container .cards .buttons button.get-starded {
   color: white;
   font-weight: 600;
@@ -241,6 +248,9 @@ main section.dream-together .container .cards .buttons button.get-starded {
   border: 1px solid #0088cc;
   font-size: 16px;
   margin: 20px;
+}
+main section.dream-together .container .cards .buttons button.get-starded:hover {
+  background-color: #3F3A64;
 }
 main section.three-dots-carousel {
   display: flex;
@@ -306,6 +316,10 @@ main section.three-dots-carousel .container .slider-container .slider .slider-im
   text-align: center;
   border-top: 1px solid rgba(169, 169, 169, 0.2);
 }
+main section.three-dots-carousel .container .slider-container .slider .slider-img .slider-card .discover-now:hover {
+  background-color: #20AD96;
+  color: white;
+}
 main section.three-dots-carousel .container .slider-container .dots-slider {
   padding-top: 20px;
   font-size: 10px;
@@ -359,6 +373,16 @@ main section.all-courses .container .negativ-margin .imgs .price-info {
   left: 0;
   margin: 0 15px;
   color: white;
+}
+main section.all-courses .container .negativ-margin .imgs .price-info .hide-info p {
+  padding: 10px 0;
+  font-weight: 400;
+}
+main section.all-courses .container .negativ-margin .imgs .price-info .hide-info p span {
+  padding-right: 15px;
+}
+main section.all-courses .container .negativ-margin .imgs .price-info .hide-info p span i {
+  padding-right: 3px;
 }
 main section.all-courses .container .negativ-margin .imgs .price-info h3 {
   font-size: 20px;
@@ -476,6 +500,9 @@ main section.events .events-container .cards {
   flex-wrap: wrap;
   margin: 0 -15px;
 }
+main section.events .events-container .cards .card:hover .card .right button {
+  background-color: #3F3A64;
+}
 main section.events .events-container .cards .card {
   width: calc(100%/2);
   padding: 0 15px;
@@ -520,6 +547,9 @@ main section.events .events-container .cards .card .card-wrapper .right button {
   border-radius: 5px;
   color: white;
   background-color: #20AD96;
+}
+main section.events .events-container .cards .card .card-wrapper .right button:hover {
+  background-color: #3F3A64;
 }
 main section.events .events-container .events-view-all p {
   font-weight: 600;
@@ -672,6 +702,10 @@ main section.newsletters .newsletters-info h1 span {
 
 .none {
   display: none;
+}
+
+.green {
+  background: #3F3A64;
 }
 
 footer {
