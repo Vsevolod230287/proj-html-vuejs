@@ -10,10 +10,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
   <link rel="stylesheet" href="./dist/css/master.css">
   <title>Document</title>
+  <style>
+    [v-cloak] {
+      display: none;
+    }
+  </style>
 </head>
 
 <body>
-  <div id="root">
+  <div id="root" v-cloak>
     <header>
       <div class="logo">
         <img src="./dist/business/images/dark-logo.png" alt="">
@@ -34,7 +39,7 @@
         <div class="navbar-right">
           <img :src="selected">
           <select v-model="selected">
-            <option value="" selected hidden>English</option>
+            <option selected hidden>English</option>
             <option v-for="(languege, i) in langueges" :value="languege.langPath">{{languege.fullLang}}</option>
           </select>
           <i class="far fa-user-circle"></i>
@@ -165,7 +170,8 @@
               </div>
 
               <div class="dots-slider">
-                <i v-for="indexDot in sliders.length" class="fas fa-circle" :class="((indexDot - 1) == index) ? 'active' : '' " @click="clickDot(indexDot-1)"></i>
+                <i v-for="indexDot in sliders.length" class="fas fa-circle" :class="((indexDot - 1) == index) ? 'active' : '' " @click="index = (indexDot - 1)">
+                </i>
               </div>
             </div>
           </div>
@@ -182,9 +188,9 @@
               <p>Explore How can I help You</p>
             </div>
             <div class="imgs" v-for="(course,i) in courses" @mouseover="show" @mouseleave="hide">
-              <div class="overlay">  </div>
+              <div class="overlay"> </div>
 
-              <div class="price-info" >
+              <div class="price-info">
                 <h3>{{course.h3}}<span>{{course.span}}</span></h3>
                 <p>{{course.p}}</p>
 
@@ -257,7 +263,7 @@
                   <span class="num">{{event.day}}</span>
                   <span class="month">{{event.month}}</span>
                   <button type="button" name="button">
-                  Get ticket</button>
+                    Get ticket</button>
                 </div>
               </div>
             </div>
@@ -270,19 +276,25 @@
         </div>
 
       </section>
+
+
+
+
+
       <section class="carousel-love-us">
         <div class="love-header">
           <p>People are proising Maxcoach</p>
           <h1>What make they love us?</h1>
         </div>
+
         <div class="love-container">
           <div class="love-carousel">
-            <div class="card" v-for="(card, i) in loveCards" v-if="i == indexLove ">
+
+            <div class="card" v-for="(card, i) in loveCards">
               <div class="love-card-info">
                 <h3>{{card.h3}}</h3>
                 <p>{{card.p}}</p>
                 <div class="profile">
-
                   <img :src="card.img" alt="">
                   <div class="profile-span">
                     <span class="name">{{card.name}}</span>
@@ -292,24 +304,22 @@
 
               </div>
             </div>
-            <div class="card" v-for="(card, i) in loveCards" v-if="i < 2">
-              <div class="love-card-info">
-                <h3>{{card.h3}}</h3>
-                <p>{{card.p}}</p>
-                <div class="profile">
-                  <img :src="card.img" alt="">
-                  <span class="name">{{card.name}}</span>
-                  <span class="profession">{{card.profession}}</span>
-                </div>
-              </div>
-            </div>
 
             <div class="love-nav-dots">
-              <i class="fas fa-circle" v-for="(dot, i) in loveCards.length" :class="(i == indexLove) ? 'active' : ''" @click="indexLove = i "></i>
+              <i class="fas fa-circle" v-for="(dot, i) in loveCards.length" @click="clickDot(i)">
+              </i>
             </div>
+
           </div>
         </div>
       </section>
+
+
+
+
+
+
+
 
       <section class="newsletters">
         <i class="far fa-circle"></i>

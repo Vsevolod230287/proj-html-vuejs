@@ -2,8 +2,12 @@ var app = new Vue({
 
   el: '#root',
   data: {
+    lang: 'en',
+    index: 0,
+    indexLove: 0,
     indexHover: 0,
     hover: false,
+    selected: './dist/business/images/en.png',
     footerInfo: {
       address: [
         'Address',
@@ -22,39 +26,8 @@ var app = new Vue({
       senzaTitle: ['none', 'Success story', 'Courses', 'Contact us'],
       information: ['Information', 'Membership', 'Purchase guide', 'Privacy plicy', 'Terms of service']
     },
-    indexLove: 0,
-    loveCards: [{
-        h3: 'High level of efficiency and scientific teaching methods',
-        p: 'I am free to learn at my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.',
-        img: './dist/business/images/testimonial-avata-02.jpg',
-        name: 'MINA HOLLACE',
-        profession: '/Freelancer',
-      },
+    enventsInfo: [
       {
-        h3: 'Professional team of specialists and passionate mentors at reach',
-        p: 'I need to get a certification for English profiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.',
-        img: './dist/business/images/testimonial-avata-04.jpg',
-        name: 'madley pondor',
-        profession: '/IT Specialist',
-      },
-      {
-        h3: 'A Versatile, analytical and hard working IT consultant.',
-        p: 'I highly recommend this aproach to anyone who aspire to become better programmers. Thank you very much Dan, sharing your passion for programming languages! ',
-        img: './dist/business/images/testimonial-avata-01.jpg',
-        name: 'John Travis',
-        profession: '/Web Programmer',
-      },
-      {
-        h3: 'It is a choice of quality for people with special needs',
-        p: 'I am very strict person so I require everything to be organized and neat. Then, I will be able to make things right and shine. MacCoach guys just got me.',
-        img: './dist/business/images/testimonial-avata-03.jpg',
-        name: 'Florence Themes',
-        profession: '/Multimedial Admin',
-      }
-    ],
-    selected: './dist/business/images/en.png',
-    index: 0,
-    enventsInfo: [{
         city: 'Texas, US',
         h3: 'Storytelling Workshop',
         day: '22',
@@ -83,7 +56,8 @@ var app = new Vue({
         h3: 'Consumer Food Safety Education Conference',
         day: '22',
         month: 'jul',
-      }, {
+      },
+      {
         city: 'Dubai',
         h3: 'How meditation improve your mental health?',
         day: '12',
@@ -91,17 +65,22 @@ var app = new Vue({
       }
     ],
     isHidden: false,
-    thriveInfo: [{
+    thriveInfo: [
+      {
       span: 'How can we help?',
       p: 'How many courses you have been on, using however many techniques and methods. Unless you have come to realize the value of mindset, then you have yet to understand how success comes.',
-    }, {
+    },
+      {
       span: 'Why would I need a business COACH?',
       p: 'How many courses you have been on, using however many techniques and methods. Unless you have come to realize the value of mindset, then you have yet to understand how success comes.',
-    }, {
+    },
+      {
       span: 'What is one-on-one coaching?',
       p: 'How many courses you have been on, using however many techniques and methods. Unless you have come to realize the value of mindset, then you have yet to understand how success comes.',
-    }],
-    courses: [{
+    }
+  ],
+    courses: [
+      {
         h3: '$40.',
         span: '00',
         p: 'Learn to Write as a professional Author',
@@ -126,7 +105,8 @@ var app = new Vue({
         link: './dist/business/images/stock-full-hd-06-443x600.jpg'
       },
     ],
-    langueges: [{
+    langueges: [
+      {
         shortLang: 'en',
         fullLang: 'English',
         langPath: './dist/business/images/en.png'
@@ -144,7 +124,8 @@ var app = new Vue({
 
       }
     ],
-    headerLinks: [{
+    headerLinks: [
+      {
         name: 'Home',
         url: '#',
       },
@@ -168,10 +149,11 @@ var app = new Vue({
         name: 'Shop',
         url: '#',
       },
-
     ],
-    sliders: [{
-        arrayImg: [{
+    sliders: [
+      {
+        arrayImg: [
+          {
             link: './dist/business/images/home-business-service-slide-01-480x298.jpg',
             indice: 0,
             h2: 'Consultative Training',
@@ -194,7 +176,8 @@ var app = new Vue({
         ]
       },
       {
-        arrayImg: [{
+        arrayImg: [
+          {
             link: './dist/business/images/1.jpeg',
             indice: 0,
             h2: 'Representative efforts',
@@ -217,7 +200,8 @@ var app = new Vue({
         ]
       },
       {
-        arrayImg: [{
+        arrayImg: [
+          {
             link: './dist/business/images/4.jpg',
             indice: 0,
             h2: 'Promote yourself!',
@@ -240,10 +224,48 @@ var app = new Vue({
         ]
       }
     ],
+    loveCards: [
+      {
+        h3: 'High level of efficiency and scientific teaching methods',
+        p: 'I am free to learn at my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.',
+        img: './dist/business/images/testimonial-avata-02.jpg',
+        name: 'MINA HOLLACE',
+        profession: '/Freelancer',
+
+
+      },
+      {
+        h3: 'Professional team of specialists and passionate mentors at reach',
+        p: 'I need to get a certification for English profiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.',
+        img: './dist/business/images/testimonial-avata-04.jpg',
+        name: 'madley pondor',
+        profession: '/IT Specialist',
+      },
+      {
+        h3: 'A Versatile, analytical and hard working IT consultant.',
+        p: 'I highly recommend this aproach to anyone who aspire to become better programmers. Thank you very much Dan, sharing your passion for programming languages! ',
+        img: './dist/business/images/testimonial-avata-01.jpg',
+        name: 'John Travis',
+        profession: '/Web Programmer',
+
+      },
+      {
+        h3: 'It is a choice of quality for people with special needs',
+        p: 'I am very strict person so I require everything to be organized and neat. Then, I will be able to make things right and shine. MacCoach guys just got me.',
+        img: './dist/business/images/testimonial-avata-03.jpg',
+        name: 'Florence Themes',
+        profession: '/Multimedial Admin',
+      }
+    ],
   },
   methods: {
     clickDot: function(indexDot) {
-      this.index = indexDot;
+
+
+
+
+
+
     },
     showX: function(e) {
       let target = $(e.target);
@@ -265,11 +287,9 @@ var app = new Vue({
       let target = $(e.target);
       console.log(target.children('div.price-info'))
     },
-
     hide: function(i) {
       this.courses[i]
     }
-
   }
 
 
